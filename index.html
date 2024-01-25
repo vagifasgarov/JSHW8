@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="./ACCEST/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        <div class="output">
+            <h2 id="output"></h2>
+        </div>
+        <div class="operations">
+            <div class="operators">
+                <button onclick="operate('+')" id="plus" class="operator">+</button>
+                <button onclick="operate('-')" id="minus" class="operator">-</button>
+                <button onclick="operate('*')" id="multiplication" class="operator">x</button>
+                <button onclick="operate('/')" id="divide" class="operator">/</button>
+            </div>
+            <div class="numbers">
+                <button onclick="numberAdd(7)" class="num">7</button>
+                <button onclick="numberAdd(8)" class="num">8</button>
+                <button onclick="numberAdd(9)" class="num">9</button>
+                <button onclick="reset()"id= "reset" class ="operator">C</button>
+            </div>
+            <div class="numbers">
+                <button onclick="numberAdd(4)" class="num">4</button>
+                <button onclick="numberAdd(5)" class="num">5</button>
+                <button onclick="numberAdd(6)" class="num">6</button>
+                <button onclick="operate('%')" id= "persent" class ="operator">%</button>
+            </div>
+            <div class="numbers">
+                <button onclick="numberAdd(1)" class="num">1</button>
+                <button onclick="numberAdd(2)" class="num">2</button>
+                <button onclick="numberAdd(3)" class="num">3</button>
+                <button onclick="operate('**')" id= "square" class ="operator">^2</button>
+            </div>
+            <div class="numbers">
+                <button onclick="numberAdd(0)" class="num">0</button>
+                <button onclick="hundredTime()" class="num">00</button>
+                <button onclick="print()" class="num">=</button>
+                <button onclick="operate('sqrt')" id= "square" class ="operator">&#8730;</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
